@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llcenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <ImageView
+            android:id="@+id/signup_logo_white"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/spotifywhite" />
+
+        <TextView
+            android:id="@+id/signup_center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_horizontal"
+            android:text="Millions of songs.\n Free on Spotify."
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toBottomOf="@+id/signup_logo_white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llcenter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnsign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/sign_up_background"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Sign up free"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_smartphone"
+            android:background="@drawable/mainscreenbuttons"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Continue with Phone number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+            tools:layout_editor_absoluteX="30dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btngoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mainscreenbuttons"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Continue with Google"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_google"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+            tools:layout_editor_absoluteX="30dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnfacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/mainscreenbuttons"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Continue with Facebook"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_facebook__1_"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Log in"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+             />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
