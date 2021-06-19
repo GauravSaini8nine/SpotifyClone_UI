@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Fragments.StartUpFragment.SignupEmail.SignUpEmailPassword">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        android:background="@android:color/transparent"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/lLayout_email"
+        android:orientation="vertical">
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email or username"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_text_back"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_text_back"
+            android:padding="12dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:id="@+id/btn_email_next"
+            android:layout_margin="20dp"
+            android:background="@drawable/black_button"
+            android:text="Next" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/blacktv"
+            android:text="LOG IN WITHOUT PASSWORD"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

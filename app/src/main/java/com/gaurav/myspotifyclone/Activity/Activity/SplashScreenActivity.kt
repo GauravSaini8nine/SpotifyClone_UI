@@ -1,9 +1,11 @@
-package com.gaurav.myspotifyclone
+package com.gaurav.myspotifyclone.Activity.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.gaurav.myspotifyclone.Activity.Activity.SignUpScreens.MainActivity
+import com.gaurav.myspotifyclone.R
 
 class SplashScreenActivity : AppCompatActivity() {
 

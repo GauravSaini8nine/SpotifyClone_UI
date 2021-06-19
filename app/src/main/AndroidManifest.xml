@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gaurav.myspotifyclone">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MySpotifyClone">
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".Activity.Activity.LogInScreens.HomeActivity"></activity>
+        <activity android:name=".Activity.Activity.SignUpScreens.BaseLogin" />
+        <activity android:name=".Activity.Activity.SignUpScreens.FacebookLogin" />
+        <activity android:name=".Activity.Activity.SignUpScreens.NumberLoginActivity" />
+        <activity android:name=".Activity.Activity.SignUpScreens.SignupEmail" />
+        <activity android:name=".Activity.Activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".Activity.Activity.SignUpScreens.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
